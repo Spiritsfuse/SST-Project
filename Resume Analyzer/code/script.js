@@ -24,7 +24,6 @@ document.getElementById('resumeForm').addEventListener('submit', async (event) =
     suggestionsDiv.textContent = '';
   
     try {
-      // Call Affinda's Resume Parsing API
       const response = await fetch('https://api.affinda.com/v2/resumes', {
         method: 'POST',
         headers: {
